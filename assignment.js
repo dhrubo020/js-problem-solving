@@ -69,7 +69,7 @@ else
 
 // tiny friend -------------------------------------------------------------------------------
 
-var tinyFriends = function(names){
+var tinyFriend = function(names){
     var min = 100000;
     var tiny = [];
     
@@ -90,5 +90,5 @@ var tinyFriends = function(names){
 }
 // input output
 var friends = ["Jokky", "Gurder", "Pikusa", "Labbry", "Stomany", "Gurgiluabrisa", "Nutty", "Fandarsico"]; //input
-console.log(tinyFriends(friends));
+console.log(tinyFriend(friends));
 // ---------end----------------------------------------------------
