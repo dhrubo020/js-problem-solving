@@ -72,7 +72,10 @@ else
 var tinyFriends = function(names){
     var min = 100000;
     var tiny = [];
-
+    
+    if(names.length == 0)
+        return "Array is empty";
+    
     for(var i=0; i<names.length; i++){
         if(names[i].length<=min){
             min = names[i].length;
