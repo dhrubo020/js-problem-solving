@@ -58,7 +58,7 @@ var brickCalculator = function(n){
     }
 }
 // input output
-var tola = 30; //input
+var tola = 21; //input
 
 if(tola<0)
     console.log("Enter a positive integer value");
@@ -72,9 +72,6 @@ else
 var tinyFriend = function(names){
     var min = 100000;
     var tiny = [];
-    
-    if(names.length == 0)
-        return "Array is empty";
     
     for(var i=0; i<names.length; i++){
         if(names[i].length<=min){
@@ -90,5 +87,12 @@ var tinyFriend = function(names){
 }
 // input output
 var friends = ["Jokky", "Gurder", "Pikusa", "Labbry", "Stomany", "Gurgiluabrisa", "Nutty", "Fandarsico"]; //input
-console.log(tinyFriend(friends));
+if(friends.length == 0){
+    console.log("Array is empty");
+}  
+else{
+    var name = tinyFriend(friends);
+    console.log("First tiny name -- " + name[0]);
+}
+
 // ---------end----------------------------------------------------
